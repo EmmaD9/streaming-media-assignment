@@ -1,0 +1,24 @@
+{
+  "name": "streaming-media-assignment",
+  "version": "1.0.0",
+  "main": "eslint.config.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests complete\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmaD9/streaming-media-assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmmaD9/streaming-media-assignment/issues"
+  },
+  "homepage": "https://github.com/EmmaD9/streaming-media-assignment#readme",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^9.39.2"
+  }
+}
