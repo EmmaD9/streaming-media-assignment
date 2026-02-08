@@ -51,4 +51,9 @@ const getParty = (request, response) => {
     
 };
 
+//streaming helper
+const streamFile = (filePath, contentType, request, response) => {
+    
+}
+
 module.exports.getParty = getParty;
