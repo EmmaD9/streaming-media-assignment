@@ -94,6 +94,23 @@ const streamFile = (filePath, contentType, request, response) => {
         stream.on('open', () => stream.pipe(response));
         stream.on('error', (streamErr) => response.end(streamErr));
     });
+    
 };
+
+const getParty = (request, response) => {
+    const file = path.resolve(__dirname, '../client/party.mp4');
+    streamFile(file, 'video/mp4', request, response);
+};
+
+const getBling = (request, response) => {
+    const file = path.resolve(__dirname, '../client/bling.mp3');
+    streamFile(file, 'audio/mpeg', request, response);
+};
+
+const getBird = (request, response) => {
+    const file = path.resolve(__dirname, '../client/bird.mp4');
+    streamFile(file, 'video/mp4', request, response);
+};
+
 
 module.exports.getParty = getParty;
