@@ -88,7 +88,6 @@ const streamFile = (filePath, contentType, request, response) => {
             'Content-Type': contentType
         });
 
-
         const stream = fs.createReadStream(filePath, { start, end});
 
         stream.on('open', () => stream.pipe(response));
