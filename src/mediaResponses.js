@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 //const index = fs.readFileSync(`${__dirname}/../client/client.html`);
 
-/*
+/* OLD getParty method before refactor
 const getParty = (request, response) => {
     const file = path.resolve(__dirname, '../client/party.mp4');
     
@@ -113,4 +113,4 @@ const getBird = (request, response) => {
 };
 
 
-module.exports.getParty = getParty;
+module.exports = {getParty, getBling, getBird};
